@@ -36,6 +36,12 @@ yarn
 
 ## Getting started
 
+```
+cp sample.env .env
+```
+Fill it with your SpaceID and AccessToken
+
+
 Get npm dependencies:
 ```
 yarn install

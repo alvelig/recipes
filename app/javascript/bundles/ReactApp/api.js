@@ -1,8 +1,8 @@
 import { createClient } from 'contentful';
 
 export const client = createClient({
-  space: 'space_id',
-  accessToken: 'access_token',
+  space: process.env.SPACE_ID,
+  accessToken: process.env.ACCESS_TOKEN,
 });
 
 export const getRecipes = () => client.getEntries({ content_type: 'recipe' });
