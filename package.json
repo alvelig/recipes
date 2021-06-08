@@ -4,7 +4,9 @@
   "scripts": {
     "start": "SSR=0 bundle exec foreman start -f Procfile.dev-hmr",
     "test": "yarn test:rails",
-    "test:rails": "bundle exec rspec"
+    "test:rails": "bundle exec rspec",
+    "lint": "yarn rubocop",
+    "rubocop": "bundle exec rubocop"
   },
   "dependencies": {
     "@babel/preset-react": "^7.13.13",
