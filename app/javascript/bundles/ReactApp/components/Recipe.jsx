@@ -39,7 +39,7 @@ function Recipe({ match }) {
         {!chefName ? null : (
           <h1 style={{ position: 'absolute', right: 20, top: 20 }}>
             <Badge variant="primary">
-              By
+              By&nbsp;
               {chefName}
             </Badge>
           </h1>
