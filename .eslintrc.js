@@ -12,5 +12,15 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react', 'prettier'],
-  rules: {},
+  rules: {
+    'no-use-before-define': 'off',
+    'react/prop-types': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    'react/destructuring-assignment': 'off',
+  },
+  overrides: [
+    {
+      files: ['*.jsx', '*.js'],
+    },
+  ],
 };

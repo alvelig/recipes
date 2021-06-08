@@ -17,7 +17,6 @@
   
 - Testing:
   - Rspec: testing Rails and Grape business logic
-  - Jest: testing React components' business logic
   - Cypress: e2e integration testing
 
 ## Prerequisites
@@ -36,6 +35,12 @@ yarn
 ```
 
 ## Getting started
+
+```
+cp sample.env .env
+```
+Fill it with your SpaceID and AccessToken
+
 
 Get npm dependencies:
 ```

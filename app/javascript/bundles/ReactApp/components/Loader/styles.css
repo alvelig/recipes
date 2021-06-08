@@ -1,0 +1,32 @@
+@keyframes updown {
+  0%   {height: 0px;}
+  50% {height: 12px;}
+  100%   {height: 0px;}
+}
+
+@keyframes hot {
+  0%    {background-color: lightslategray;}
+  50%   {background-color: red;}
+  100%  {background-color: lightslategray;}
+}
+
+@keyframes rotate-s-loader {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.round-circle {
+  border-top-left-radius: 9999px;
+  width: 15px;
+  height: 15px;
+  border-top: solid 1px;
+  position: absolute;
+  z-index: -1;
+  animation: rotate-s-loader;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
