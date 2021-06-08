@@ -16,7 +16,7 @@
   - react-markdown
   
 - Testing:
-  - Rspec: testing Rails and Grape business logic
+  - Rspec: testing Rails business logic
   - Cypress: e2e integration testing
 
 ## Prerequisites
@@ -24,8 +24,14 @@
 Ruby environment:
 ```
 ruby 2.7
-rails
-foreman
+bundler # gem install bundler:2.2.19
+rails # included in Gem file
+foreman # included in Gem file
+```
+
+Kind suggestion to use [rbenv](https://github.com/rbenv)
+```
+rbenv install 2.7.3
 ```
 
 JS environment
@@ -54,8 +60,10 @@ bundle install
 
 Start development server:
 ```
-bundle exec foreman start -f Procfile.dev-hmr
+yarn start
 ```
+
+Open: [http://localhost:3000/](http://localhost:3000/)
 
 ## Testing
 
@@ -74,7 +82,3 @@ yarn lint
 ```
 Rubocop analyses ruby files
 Eslint and prettier serve for javascript files enforcing styles and finding possible problems
-
-## Production deployment
-
-
