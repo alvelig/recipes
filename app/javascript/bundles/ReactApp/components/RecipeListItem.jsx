@@ -31,14 +31,17 @@ function RecipeListItem(recipeEntry) {
     >
       <Card style={{ flex: 1 }}>
         <Card.Img variant="top" src={photo?.fields?.file?.url} />
-        <Card.Body style={{
-          display: 'flex',
-          flexDirection: 'column',
-        }}
+        <Card.Body
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+          }}
         >
-          <Card.Title>
-            <LinesEllipsis text={title} maxLine={2} />
-          </Card.Title>
+          <div style={{ flex: 1 }}>
+            <Card.Title>
+              <LinesEllipsis text={title} maxLine={2} />
+            </Card.Title>
+          </div>
           <RecipeListItemBottom tags={tags} calories={calories} />
         </Card.Body>
       </Card>
