@@ -17,7 +17,6 @@
   
 - Testing:
   - Rspec: testing Rails and Grape business logic
-  - Jest: testing React components' business logic
   - Cypress: e2e integration testing
 
 ## Prerequisites
