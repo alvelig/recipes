@@ -5,10 +5,10 @@ function Routes() {
   return (
     <Switch>
       <Route path="/recipes/:id" render={() => <div>Recipe page</div>} />
-      <Route path="/"  render={() => <div>Recipes list page</div>} />
+      <Route path="/" render={() => <div>Recipes list page</div>} />
       <Redirect to="/" />
     </Switch>
-  )
+  );
 }
 
-export default Routes
+export default Routes;
