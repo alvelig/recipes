@@ -50,6 +50,8 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
+  gem "rspec", "~> 3.10"
+  gem "rspec-rails", "~> 5.0"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -59,3 +61,5 @@ gem "react_on_rails", "~> 12.2"
 gem 'mini_racer', platforms: :ruby
 
 gem "foreman", "~> 0.87.2"
+
+gem "rails-controller-testing", "~> 1.0"
