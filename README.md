@@ -66,7 +66,7 @@ Specific tests commands you can see in the package.json file.
 yarn lint
 ```
 Rubocop analyses ruby files
-Eslint and prettier serve for javascript files
+Eslint and prettier serve for javascript files enforcing styles and finding possible problems
 
 ## Production deployment
 
