@@ -4,13 +4,19 @@ import { Badge } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import ReactMarkdown from 'react-markdown';
 import { getEntry } from '../api';
+import Loader from './Loader';
+import Error from './Error';
 
 function Recipe({ match }) {
   const recipeId = match?.params?.recipe;
-  const { loading, result } = useAsync(getEntry, [recipeId]);
+  const { loading, error, result } = useAsync(getEntry, [recipeId]);
 
   if (loading) {
-    return <div>loading</div>;
+    return <Loader />;
+  }
+
+  if (error) {
+    return <Error />;
   }
 
   const {

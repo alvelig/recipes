@@ -2,16 +2,18 @@ import React from 'react';
 import { useAsync } from 'react-async-hook';
 import RecipeListItem from './RecipeListItem';
 import { getRecipes } from '../api';
+import Loader from './Loader';
+import Error from './Error';
 
 function RecipeList() {
   const { loading, error, result } = useAsync(getRecipes, []);
 
   if (loading) {
-    return <div>Loading</div>;
+    return <Loader />;
   }
 
   if (error) {
-    return <div>{error}</div>;
+    return <Error />;
   }
 
   return (
