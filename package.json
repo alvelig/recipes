@@ -1,6 +1,14 @@
 {
   "name": "recipes",
   "private": true,
+  "scripts": {
+    "start": "SSR=0 bundle exec foreman start -f Procfile.dev-hmr",
+    "test": "run-s test:rails",
+    "test:rails": "bundle exec rspec",
+    "lint": "run-s rubocop eslint",
+    "rubocop": "bundle exec rubocop",
+    "eslint": "eslint app/javascript/bundles/ReactApp/**"
+  },
   "dependencies": {
     "@babel/preset-react": "^7.13.13",
     "@rails/actioncable": "^6.0.0",
@@ -12,12 +20,24 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-on-rails": "12.2.0",
+    "react-router-dom": "^5.2.0",
     "turbolinks": "^5.2.0",
     "webpack": "^4.46.0",
     "webpack-cli": "^3.3.12"
   },
   "version": "0.1.0",
   "devDependencies": {
+    "eslint": "^7.28.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.3.1",
+    "prettier-eslint": "^12.0.0",
     "webpack-dev-server": "^3.11.2"
   }
 }
