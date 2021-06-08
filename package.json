@@ -3,8 +3,9 @@
   "private": true,
   "scripts": {
     "start": "SSR=0 bundle exec foreman start -f Procfile.dev-hmr",
-    "test": "run-s test:rails",
+    "test": "run-s test:rails test:cypress",
     "test:rails": "bundle exec rspec",
+    "test:cypress": "yarn cypress run",
     "lint": "run-s rubocop eslint",
     "rubocop": "bundle exec rubocop",
     "eslint": "eslint app/javascript/bundles/ReactApp/**"
@@ -35,6 +36,7 @@
   "version": "0.1.0",
   "devDependencies": {
     "dotenv-webpack": "^7.0.3",
+    "cypress": "^7.5.0",
     "eslint": "^7.28.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.3.0",

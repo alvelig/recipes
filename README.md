@@ -65,6 +65,8 @@ yarn test
 ```
 Specific tests commands you can see in the package.json file.
 
+**ATTENTION:** before running Cypress tests please run `yarn start` to make the application available for e2e testing.
+
 ## Linting
 
 ```
