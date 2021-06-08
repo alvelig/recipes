@@ -8,7 +8,7 @@
     "test:cypress": "yarn cypress run",
     "lint": "run-s rubocop eslint",
     "rubocop": "bundle exec rubocop",
-    "eslint": "eslint app/javascript/bundles/ReactApp/**"
+    "eslint": "eslint --ext js,jsx app/javascript/bundles/ReactApp"
   },
   "dependencies": {
     "@babel/preset-react": "^7.13.13",
